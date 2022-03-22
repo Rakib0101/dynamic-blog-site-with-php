@@ -6,7 +6,7 @@
     case "single.php":
       if(isset($_GET['id'])){
         $sql_title = "SELECT * FROM post WHERE post_id = {$_GET['id']}";
-        $result_title = mysqli_query($conn,$sql_title) or die("Tile Query Failed");
+        $result_title = mysqli_query($conn,$sql_title) or die("Title Query Failed");
         $row_title = mysqli_fetch_assoc($result_title);
         $page_title = $row_title['title'];
       }else{
@@ -26,7 +26,7 @@
     case "author.php":
       if(isset($_GET['aid'])){
         $sql_title = "SELECT * FROM user WHERE user_id = {$_GET['aid']}";
-        $result_title = mysqli_query($conn,$sql_title) or die("Tile Query Failed");
+        $result_title = mysqli_query($conn,$sql_title) or die("Title Query Failed");
         $row_title = mysqli_fetch_assoc($result_title);
         $page_title = "News By " .$row_title['first_name'] . " " . $row_title['last_name'];
       }else{
@@ -43,7 +43,7 @@
       break;
     default :
       $sql_title = "SELECT websitename FROM settings";
-      $result_title = mysqli_query($conn,$sql_title) or die("Tile Query Failed");
+      $result_title = mysqli_query($conn,$sql_title) or die("Title Query Failed");
       $row_title = mysqli_fetch_assoc($result_title);
       $page_title = $row_title['websitename'];
       break;
