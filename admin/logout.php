@@ -1,12 +1,14 @@
-<?php 
 
-    include 'config.php';
-    session_start();
+<?php
 
-    session_unset();
+include "config.php";
 
-    session_destroy();
+session_start();
 
-    header("Location: http://localhost/news-site/admin/")
+session_unset();
+
+session_destroy();
+
+header("Location: {$hostname}/admin/");
 
 ?>

@@ -523,13 +523,6 @@ i.fa{
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
-/* disable link */
-
-a.disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
 /* Footer Styling */
 #footer{
     color: #fff;
