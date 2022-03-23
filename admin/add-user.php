@@ -61,6 +61,7 @@ if(isset($_POST['save'])){
                               <option value="1">Admin</option>
                           </select>
                       </div>
+                      
                       <input type="submit"  name="save" class="btn btn-primary" value="Save" required />
                   </form>
                    <!-- Form End-->

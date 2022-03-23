@@ -37,7 +37,9 @@
                                 <input type="password" name="password" class="form-control" placeholder="" required>
                             </div>
                             <input type="submit" name="login" class="btn btn-primary" value="login" />
+                            <p style="margin-top: 10px;">Haven't Account Yet ? Please <a href="sign-up.php">Sign Up</a></p>
                         </form>
+                        
                         <!-- /Form  End -->
                         <?php
                           if(isset($_POST['login'])){
